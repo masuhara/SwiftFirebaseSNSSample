@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="KGk-i7-Jjw" customClass="UserHeaderTableViewCell" customModule="FirebaseSNSSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C6G-cM-3DJ">
+                        <rect key="frame" x="16" y="16" width="120" height="120"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="FOQ-5o-Bdy"/>
+                            <constraint firstAttribute="height" constant="120" id="aX8-pa-kKt"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="60"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9L5-eS-Y7x">
+                        <rect key="frame" x="148" y="16" width="211" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="aOx-vs-mbS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsg-hA-UUU">
+                        <rect key="frame" x="148" y="76" width="211" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="kRe-mY-Znd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" title="いいねした投稿一覧"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="favoriteList" destination="KGk-i7-Jjw" eventType="touchUpInside" id="a3P-5A-gSb"/>
+                        </connections>
+                    </button>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ye3-jT-tkb">
+                        <rect key="frame" x="16" y="148" width="343" height="35.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="C6G-cM-3DJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="2jC-Gg-nTg"/>
+                    <constraint firstAttribute="bottom" secondItem="ye3-jT-tkb" secondAttribute="bottom" constant="16" id="3TV-0l-WVA"/>
+                    <constraint firstItem="9L5-eS-Y7x" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="6Uj-fT-Fvh"/>
+                    <constraint firstItem="9L5-eS-Y7x" firstAttribute="leading" secondItem="C6G-cM-3DJ" secondAttribute="trailing" constant="12" id="9eR-QP-fmp"/>
+                    <constraint firstAttribute="trailing" secondItem="9L5-eS-Y7x" secondAttribute="trailing" constant="16" id="EX2-3y-cwY"/>
+                    <constraint firstItem="hsg-hA-UUU" firstAttribute="leading" secondItem="C6G-cM-3DJ" secondAttribute="trailing" constant="12" id="fCP-G2-DsY"/>
+                    <constraint firstItem="C6G-cM-3DJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="kTV-ME-B90"/>
+                    <constraint firstAttribute="trailing" secondItem="ye3-jT-tkb" secondAttribute="trailing" constant="16" id="mRd-8C-1Zy"/>
+                    <constraint firstAttribute="trailing" secondItem="hsg-hA-UUU" secondAttribute="trailing" constant="16" id="t4X-fb-kFS"/>
+                    <constraint firstItem="ye3-jT-tkb" firstAttribute="top" secondItem="C6G-cM-3DJ" secondAttribute="bottom" constant="12" id="vZy-y7-8T7"/>
+                    <constraint firstItem="ye3-jT-tkb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="xSq-b5-s5D"/>
+                    <constraint firstItem="hsg-hA-UUU" firstAttribute="top" secondItem="9L5-eS-Y7x" secondAttribute="bottom" id="xgV-wn-053"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="userImageView" destination="C6G-cM-3DJ" id="9eg-Ub-i8i"/>
+                <outlet property="userNameLabel" destination="9L5-eS-Y7x" id="oMF-NL-UO1"/>
+            </connections>
+            <point key="canvasLocation" x="177.536231884058" y="169.41964285714286"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -8,5 +8,22 @@ target 'FirebaseSNSSample' do
   # Pods for FirebaseSNSSample
 
 pod 'Firebase/Core'
+pod 'Firebase/Auth'
+pod 'Firebase/Firestore'
+pod 'Firebase/Storage'
+
+# UI
+pod 'ActiveLabel'
+pod 'Pastel'
+pod 'SVProgressHUD'
+pod 'KafkaRefresh'
+pod 'FontAwesome.swift'
+pod 'SwiftMessages'
+pod 'DZNEmptyDataSet'
+pod 'SkeletonView'
+
+# Other
+pod 'IQKeyboardManagerSwift'
+pod 'Kingfisher'
 
 end
